@@ -146,7 +146,6 @@ table {
 body {
   /* padding-top: 15%; */
   /* background-color: #0a315c; */
-  background-image: radial-gradient(rgb(63, 63, 165), rgb(28, 28, 135), blue);
   text-align: center;
   font-family: fantasy;
   font-style: italic;
@@ -229,7 +228,7 @@ button {
 
 .button {
   background: coral;
-  margin-top: -5rem;
+  margin-top: 2rem;
   margin-bottom: 2rem;
   padding: 1em 2em;
   color: white;
@@ -285,11 +284,14 @@ h1 {
   margin: 0;
   margin-bottom: 2rem;
   text-align: center;
-  font-size: 4em;
-  font-family: fantasy;
+  font-size: 7em;
+  font-family: marker felt, fantasy;
+  -webkit-text-stroke: 3px coral;
+  font-style: oblique;
+  letter-spacing: 3rem;
   position: center;
   z-index: 1;
-  font-weight: bold;
+  font-weight: 900;
   color: rgb(80, 184, 177);
 }
 

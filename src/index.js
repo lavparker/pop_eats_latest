@@ -1,5 +1,6 @@
-var national_foods = require('../data/country_food_data.json');
-
+import national_foods from '../data/country_food_data.json';
+import country_foods from '../data/foods';
+import { countries } from "country-flags-svg"; 
 
 document.addEventListener("DOMContentLoaded", () => {
     const modal = document.querySelector(".modal");
@@ -51,7 +52,7 @@ document.addEventListener("DOMContentLoaded", () => {
             .append('title')
             .text(d => ` ${d.properties.name}`);
 
-      
+
 
             svg.on('mouseover', (d) => {
                 console.log('MOUSEOVER EVENT', d.target?.dataset)
@@ -88,18 +89,15 @@ document.addEventListener("DOMContentLoaded", () => {
 
     // function
 
-    
-
-
-  
-
 
     function getCountryNameFromTarget(target) {
+        
         if (!target) {
             return ""
         }
-
+        
         let element = target.querySelector("title")
+        
 
         if (!element) {
             return ""
@@ -113,4 +111,25 @@ document.addEventListener("DOMContentLoaded", () => {
         return country_name
     }
 
+    $(function() {
+    var data = [
+        {
+        "id": "1",
+        "name": "test1"},
+    {
+        "id": "2",
+        "name": "test2"}
+    ];
+    $.each(data, function(i, option) {
+        $('#sel').append($('<option/>').attr("value", option.id).text(option.name));
+    });
+    })
+    //  $(function(){
+    //     let countries = Object.keys(national_foods); 
+
+    //     $.each(countries, function(i, option){
+    //         $('#sel').append($('<option/>').attr("value", option))
+    //     })
+
+    // })
 })

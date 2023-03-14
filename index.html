@@ -35,15 +35,21 @@
         </div>
     
     </div>
-    <button class="btn button">How to Use</button>
+    
 
+    <style>
+        body{
+             background-image: url("ocean1.jpeg");
+             background-size:cover;
+        }
+    </style>
   
 </head>
 
 <body>
 
 
- 
+    
 
   <!-- <script>
     /* When the user clicks on the button, 
@@ -104,56 +110,67 @@
 <div class="title">
     <h1>Pop Eats</h1>
 </div>
-
+    <button class="btn button">How to Use</button>
     <p>Click on the button to open the dropdown menu.</p>
+ <select name="" id="sel">
+    
+ </select>
+    <!-- <p>
+        <input type="button" onclick="populateSelect()" value="Click to Populate SELECT with JSON" />
+    </p> -->
+    
+    <!--The SELECT element.-->
+    <!-- <select id="sel" onchange="show(this)">
+        <option value="">-- Select --</option>
+    </select>
+    
+    <p id="msg"></p>
+    </body> -->
+    
+    <!-- <script type="module" >
+        // import country_foods from "./data/country_foods"; 
 
+        import country_foods from "./data/foods.js"; 
+        // console.log("hi")
+        let countries = Object.keys(country_foods)
 
-<p>
-    <input type="button" onclick="populateSelect()" value="Select A Country" />
-</p>
-
-<select name="" id="sel" onchange="show(this)">
-    <option value="">select test</option>
-</select>
-
-<p id="msg"></p>
-
-
-
-
-<script type="module">
-    // let food_countries = Object.keys(national_foods);
-    import country_foods from "./data/foods.js"; 
-
-    // const country_foods = require ("./data/foods.js");
-
-    console.log(country_foods);
-    // fetch("./data/country_food_data.json")
-    //     .then(res => res.json)
-    //     .then(data => console.log(data))
-    //     .catch(err => console.log(err))
+        // console.log(country_foods)
+        console.log(countries)
 
 
 
-    function populateSelect(){
-        // populate select element with json
-        let ele = document.getElementById('sel');
-        for (let i = 0; i < food_countries.length; i++){
-            ele.innerHTML = ele.innerHTML +
-            '<option value="' + food_countries[i] + '"> </option>';
+        function populateSelect() {
+         
+            console.log("listed" + countries)
+
+            let countries; 
+            // THE JSON ARRAY.
+            let birds = [
+                { "ID": "001", "Bird_Name": "Eurasian Collared-Dove" },
+                { "ID": "002", "Bird_Name": "Bald Eagle" },
+                { "ID": "003", "Bird_Name": "Cooper's Hawk" },
+            ];
+
+
+            let ele = document.getElementById('sel');
+            for (let i = 0; i < birds.length; i++) {
+                // POPULATE SELECT ELEMENT WITH JSON.
+                ele.innerHTML = ele.innerHTML +
+                    '<option value="' + birds[i]['ID'] + '">' + birds[i]['Bird_Name'] + '</option>';
+            }
         }
-    }
 
-    function show(ele){
-        // get the selected value from select element and show it 
-        let msg = document.getElementById('msg');
-        msg.innerHTML = 'Country: <b>' + ele.options[ele.selectedIndex].text + 
-            '</b> </br>' + 'Dish: <b>' + ele.value + '</b>';
-    }
+        function show(ele) {
+            // GET THE SELECTED VALUE FROM <select> ELEMENT AND SHOW IT.
+            let msg = document.getElementById('msg');
+            msg.innerHTML = 'Selected Bird: <b>' + ele.options[ele.selectedIndex].text + '</b> </br>' +
+                'ID: <b>' + ele.value + '</b>';
+        }
+    </script>
 
-</script>
 
-<script>
+
+<script> -->
 
 </script>
 <div class="country_names">
