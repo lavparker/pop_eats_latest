@@ -11,12 +11,10 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/lipis/flag-icons@6.6.6/css/flag-icons.min.css" />
     <script src="https://d3js.org/d3.v7.min.js"></script>
     <script src="https://d3js.org/topojson.v2.min.js"></script>
-    <!-- <script src="https://raw.githubusercontent.com/samayo/country-json/master/src/country-by-national-dish.json"></script> -->
     <script src="./src/index.js"></script>
     <script src="./dist/main.js"></script>
     
     <title>Pop Eats</title>
-    <!-- <link rel="icon" type="image/x-icon" href="/images/favicon.ico"> -->
     <div class="social_media_links">
         <p>Socials:</p>
         <a target="_blank" id="linkedin" href="https://www.linkedin.com/in/la-vinia-parker-ab93885a">
@@ -48,34 +46,6 @@
 </head>
 
 <body>
-
-
-    
-
-  <!-- <script>
-    /* When the user clicks on the button, 
-    toggle between hiding and showing the dropdown content */
-
-
-    function myFunction() {
-        document.getElementById("myDropdown").classList.toggle("show");
-    }
-
-    // Close the dropdown if the user clicks outside of it
-    window.onclick = function (event) {
-        if (!event.target.matches('.dropbtn')) {
-            var dropdowns = document.getElementsByClassName("dropdown-content");
-            var i;
-            for (i = 0; i < dropdowns.length; i++) {
-                var openDropdown = dropdowns[i];
-                if (openDropdown.classList.contains('show')) {
-                    openDropdown.classList.remove('show');
-                }
-            }
-        }
-    }
-  </script> -->
-
 
     <section class="modal hidden">
         <div class="flex">
@@ -120,7 +90,6 @@
 </select>
    
 
-
 <div class="country_names">
     
 </div>
@@ -130,38 +99,6 @@
 
 </html>
 
-<!-- bring this back! <script>
-    $(document).ready(function(){
-        load_json_data('country');
-
-        function load_json_data(id, parent_id)
-        {
-            var html_code = '';
-            $.getJSON('countries-110m.json', function(data) {
-                html_code += '<option value="">Select' +id+ '</option';
-                    $.each(data, function(key, value) {
-                        if(id== 'country') 
-                        {
-                            if(value.parent_id == '0')
-                            {
-                                html_code += '<option value=" ' +value.id+ '">' +value.name+ '</option>';
-                            }
-                        }
-                        else
-                        {
-                            if(value.parent_id== parent_id)
-                            {
-                                html_code += '<option value="' +value.id+'">' +value.name+ '</option>';
-                            }
-                        }
-                    });
-                    $('#' +id).html(html_code);
-            });
-        }
-
-
-    })
-</script> -->
 
 <script>
     $(document).ready(function () {
@@ -186,8 +123,6 @@
                 $('#' + id).html(html_code);
             });
         }
-
-        // function 
 
 
     })
