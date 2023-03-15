@@ -111,19 +111,24 @@ document.addEventListener("DOMContentLoaded", () => {
         return country_name
     }
 
-    $(function() {
-    var data = [
-        {
-        "id": "1",
-        "name": "test1"},
-    {
-        "id": "2",
-        "name": "test2"}
-    ];
-    $.each(data, function(i, option) {
-        $('#sel').append($('<option/>').attr("value", option.id).text(option.name));
-    });
-    })
+
+    //onchange food-displayer
+      let countryjs = Object.keys(country_foods);
+      console.log(countryjs)
+    //   console.log(countries[0]["dish"]) how do i pull dish in 
+    countryjs.forEach(function(selectedItem){
+        console.log("hi")
+      
+        let option = document.createElement('option'); 
+        option.value = selectedItem //country food code to pull country food
+        option.innerHTML= selectedItem //code to pull country name
+        selector.appendChild(option)
+    }), 
+
+    selector.onchange = function(){
+        alert(this.value);
+    }
+   
     //  $(function(){
     //     let countries = Object.keys(national_foods); 
 
