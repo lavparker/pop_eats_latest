@@ -117,24 +117,39 @@ document.addEventListener("DOMContentLoaded", () => {
       console.log(countryjs)
     //   console.log(countries[0]["dish"]) how do i pull dish in 
     countryjs.forEach(function(selectedItem){
-        console.log("hi")
+        // console.log("hi" + selectedItem)console.log("hi" + selectedItem)
       
         let option = document.createElement('option'); 
+
         option.value = selectedItem //country food code to pull country food
         option.innerHTML= selectedItem //code to pull country name
         selector.appendChild(option)
+
+        
     }), 
 
     selector.onchange = function(){
-        alert(this.value);
+
+        // alert(this.value);
+        console.log(this.value)
+
+        let selected_country = this.value; 
+
+        // console.log(selected_country + " is the selected country")
+        // console.log(country_foods[selected_country].dish)
+
+        document.getElementById("food_displayer").innerHTML = selected_country + ": " + country_foods[selected_country].dish
     }
+
    
-    //  $(function(){
-    //     let countries = Object.keys(national_foods); 
 
-    //     $.each(countries, function(i, option){
-    //         $('#sel').append($('<option/>').attr("value", option))
-    //     })
-
-    // })
 })
+
+    // svg.on("click", (d) => {
+    //             let selected_country = getCountryNameFromTarget(d.target)
+            
+    //             if (national_foods[selected_country]) {
+    //                 document.getElementById("food_displayer").innerHTML = selected_country + ": " + national_foods[selected_country].dish
+       
+    //             }
+    //         })
