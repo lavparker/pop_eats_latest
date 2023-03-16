@@ -10,8 +10,24 @@
 
 // }
 .social_media_links {
-   
+    margin-top: 3rem;
     margin-left:72%;
+    line-height: 2rem;
+    font-weight: bold;
+    padding: 10px;
+    background-color: aqua;
+    background-size: 3rem;
+    border-radius: 7px;
+    font-size: 36px;
+}
+
+#email{
+    max-width: 16px;
+
+}
+
+.social_media_links:hover{
+    background-color: coral;
 }
 
 
@@ -175,6 +191,7 @@ h1 {
     z-index: 1;
     font-weight: 900; 
     color: rgb(80, 184, 177);
+    
 }
 
 

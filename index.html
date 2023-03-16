@@ -5,7 +5,8 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <link rel="shortcut icon" type="image/jpg" href="/images/favicon.jpg" />
+    <base href="/">
+    <link rel="shortcut icon" type="image/jpg" href="/images/favicon.png" />
     <link rel="stylesheet" href="./dist/main.css" />
     <link rel="stylesheet" href="./src/style/reset.css" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/lipis/flag-icons@6.6.6/css/flag-icons.min.css" />
@@ -16,7 +17,10 @@
     
     <title>Pop Eats</title>
     <div class="social_media_links">
-        <p>Socials:</p>
+        <p>Hire Me!</p>
+        <a target="_blank" id="email" href="mailto:lavinia.parker@outlook.com?body=Hi%20La%20Vinia,&nbsp;This%20is%20why%20I%20want%20to%20hire%20you!">
+            <img src="./images/enve.png" alt="email logo">
+        </a>
         <a target="_blank" id="linkedin" href="https://www.linkedin.com/in/la-vinia-parker-ab93885a">
             <img src="./images/linkedin.png" alt="linkedin social media logo" />
         </a>
@@ -52,10 +56,10 @@
             <button class="btn-close">⨉</button>
         </div>
         <div>
-            <p>Welcome to Pop Eats!</p>
+            <p class="welcome">Welcome to Pop Eats!</p>
             <br>
-            <p>How to Use:</p>
-            <p>
+            <p class="how-to">How to Use:</p>
+            <p class="paragraph">
                 Hover over each country to see what the country is. If you
                 already know where the country you are looking for
                 is,click on the country and the country's national dish/favorite
@@ -100,30 +104,3 @@
 </html>
 
 
-<script>
-    $(document).ready(function () {
-        load_json_data('country');
-        load_json_data('');
-        function load_json_data(id, parent_id) {
-            var html_code = '';
-            $.getJSON('countries-110m.json', function (data) {
-                html_code += '<option value="">Select' + id + '</option';
-                $.each(data, function (key, value) {
-                    if (id == 'country') {
-                        if (value.parent_id == '0') {
-                            html_code += '<option value=" ' + value.id + '">' + value.name + '</option>';
-                        }
-                    }
-                    else {
-                        if (value.parent_id == parent_id) {
-                            html_code += '<option value="' + value.id + '">' + value.name + '</option>';
-                        }
-                    }
-                });
-                $('#' + id).html(html_code);
-            });
-        }
-
-
-    })
-</script>

@@ -1,6 +1,6 @@
 import national_foods from '../data/country_food_data.json';
-import country_foods from '../data/foods';
-import { countries } from "country-flags-svg"; 
+import country_foods from '../data/foods.js';
+// import { countries } from "country-flags-svg"; 
 
 document.addEventListener("DOMContentLoaded", () => {
     const modal = document.querySelector(".modal");
@@ -78,16 +78,11 @@ document.addEventListener("DOMContentLoaded", () => {
             })
 
        
-            //  function dropdownSelection ("click", (d) =>{
-            //     let selected_country = getCountryNameFromTarget(d.target)
-
-            //  })
+           
     });
 
     
-    // let food_countries = Object.keys(national_foods); 
-
-    // function
+   
 
 
     function getCountryNameFromTarget(target) {
@@ -114,7 +109,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
     //onchange food-displayer
       let countryjs = Object.keys(country_foods);
-      console.log(countryjs)
+    //   console.log(countryjs)
     //   console.log(countries[0]["dish"]) how do i pull dish in 
     countryjs.forEach(function(selectedItem){
         // console.log("hi" + selectedItem)console.log("hi" + selectedItem)
@@ -130,8 +125,8 @@ document.addEventListener("DOMContentLoaded", () => {
 
     selector.onchange = function(){
 
-        // alert(this.value);
-        console.log(this.value)
+      
+        // console.log(this.value)
 
         let selected_country = this.value; 
 
@@ -141,15 +136,7 @@ document.addEventListener("DOMContentLoaded", () => {
         document.getElementById("food_displayer").innerHTML = selected_country + ": " + country_foods[selected_country].dish
     }
 
-   
+
+
 
 })
-
-    // svg.on("click", (d) => {
-    //             let selected_country = getCountryNameFromTarget(d.target)
-            
-    //             if (national_foods[selected_country]) {
-    //                 document.getElementById("food_displayer").innerHTML = selected_country + ": " + national_foods[selected_country].dish
-       
-    //             }
-    //         })

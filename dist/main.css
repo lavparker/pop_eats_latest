@@ -140,7 +140,23 @@ table {
   !*** css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[1].use[1]!./node_modules/sass-loader/dist/cjs.js!./src/index.scss ***!
   \*************************************************************************************************************************************/
 .social_media_links {
+  margin-top: 3rem;
   margin-left: 72%;
+  line-height: 2rem;
+  font-weight: bold;
+  padding: 10px;
+  background-color: aqua;
+  background-size: 3rem;
+  border-radius: 7px;
+  font-size: 36px;
+}
+
+#email {
+  max-width: 16px;
+}
+
+.social_media_links:hover {
+  background-color: coral;
 }
 
 body {
