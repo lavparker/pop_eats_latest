@@ -11,6 +11,9 @@ const country_foods = {
     "Angola": {
         "dish": "Moamba de galinha "
     },
+    "Antarctica": {
+        "dish": "Pemmican"
+    },
     "Antigua and Barbuda": {
         "dish": "Pepperpot, Fungee"
     },
