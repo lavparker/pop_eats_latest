@@ -1,6 +1,6 @@
 document.addEventListener("DOMContentLoaded", () => {
-  const modal = document.querySelectorAll(".modal");
-  const overlay = document.querySelectorAll(".overlay");
+  const modal = document.querySelector(".modal");
+  const overlay = document.querySelector(".overlay");
   const openModalBtn = document.querySelector(".button");
   const closeModalBtn = document.querySelector(".btn-close");
 
