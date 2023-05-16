@@ -1,8 +1,8 @@
 document.addEventListener("DOMContentLoaded", () => {
   const modal = document.querySelectorAll(".modal");
   const overlay = document.querySelectorAll(".overlay");
-  const openModalBtn = document.querySelectorAll(".button");
-  const closeModalBtn = document.querySelectorAll(".btn-close");
+  const openModalBtn = document.querySelector(".button");
+  const closeModalBtn = document.querySelector(".btn-close");
 
   const openModal = function () {
     modal.classList.remove("hidden");
@@ -83,7 +83,7 @@ document.addEventListener("DOMContentLoaded", () => {
       return "";
     }
 
-    let element = target.querySelectorAll("title");
+    let element = target.querySelector("title");
 
     if (!element) {
       return "";
