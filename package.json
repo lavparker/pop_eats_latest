@@ -4,16 +4,19 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
-  "browserslist": [
-    "defaults"
-  ],
+ 
   "scripts": {
     "watch": "webpack --watch --mode=development",
     "build": "webpack --mode=production"
   },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lavparker/pop_eats_latest.git"
+  },
   "keywords": [],
   "author": "",
   "license": "ISC",
+   "homepage": "https://github.com/lavparker/pop_eats_latest#readme",
   "dependencies": {
     "@babel/core": "^7.20.5",
     "@babel/preset-env": "^7.20.2",
@@ -28,7 +31,10 @@
     "sass-loader": "^13.2.0",
     "webpack": "^5.75.0",
     "webpack-cli": "^5.0.1"
-  }, 
-  "homepage": "https://lavparker.github.io/pop_eats_latest/"
+  },
+   "browserslist": [
+    "defaults"
+  ]
+ 
 
 }
