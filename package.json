@@ -16,7 +16,7 @@
   "keywords": [],
   "author": "",
   "license": "ISC",
-   "homepage": "https://github.com/lavparker/pop_eats_latest#readme",
+   "homepage": "http://lavparker.github.io/pop_eats_latest",
   "dependencies": {
     "@babel/core": "^7.20.5",
     "@babel/preset-env": "^7.20.2",
