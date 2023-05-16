@@ -3,10 +3,10 @@ import country_foods from '../data/foods.js';
 // import { countries } from "country-flags-svg"; 
 
 document.addEventListener("DOMContentLoaded", () => {
-    const modal = document.querySelector(".modal");
-    const overlay = document.querySelector(".overlay");
-    const openModalBtn = document.querySelector(".button");
-    const closeModalBtn = document.querySelector(".btn-close");
+    const modal = document.querySelectorAll(".modal");
+    const overlay = document.querySelectorAll(".overlay");
+    const openModalBtn = document.querySelectorAll(".button");
+    const closeModalBtn = document.querySelectorAll(".btn-close");
 
     const openModal = function () {
         modal.classList.remove("hidden");
@@ -69,7 +69,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
             svg.on("click", (d) => {
                 let selected_country = getCountryNameFromTarget(d.target)
-                // let country_reveal = document.querySelector('country-reveal'); 
+                // let country_reveal = document.querySelectorAll('country-reveal'); 
                 if (national_foods[selected_country]) {
                     document.getElementById("food_displayer").innerHTML = selected_country + ": " + national_foods[selected_country].dish
                     // document.getElementById("country_info_displayr").innerHTML = selected_country + ": " + national_foods[selected_country].dish
@@ -91,7 +91,7 @@ document.addEventListener("DOMContentLoaded", () => {
             return ""
         }
         
-        let element = target.querySelector("title")
+        let element = target.querySelectorAll("title")
         
 
         if (!element) {
