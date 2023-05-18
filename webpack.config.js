@@ -10,7 +10,11 @@ const config = {
   ],
   output: {
     path: path.join(__dirname, 'dist'), // bundled file in dist/
-    filename: '[name].js'
+    filename: '[name].js',
+    publicPath: '/dist/'
+  },
+  resolve:{
+    extensions: ['.js']
   },
   module: {
     rules: [
