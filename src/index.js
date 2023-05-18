@@ -1,5 +1,5 @@
 document.addEventListener("DOMContentLoaded", () => {
-  const modal = document.querySelector(".modal");
+  const modal = document.querySelectorAll(".modal");
   const overlay = document.querySelector(".overlay");
   const openModalBtn = document.querySelector(".button");
   const closeModalBtn = document.querySelector(".btn-close");
@@ -30,22 +30,20 @@ document.addEventListener("DOMContentLoaded", () => {
 
   const tooltip = svg.append('g');
 
-  const loadJSONData = async (url) => {
-    try {
-      const response = await fetch(url);
-      if (!response.ok) {
-        throw new Error('Failed to fetch data');
-      }
-      const data = await response.json();
-      return data;
-    } catch (error) {
-      console.error(error);
-    }
-  };
+//   const loadJSONData = async (url) => {
+//     try {
+//       const response = await fetch(url);
+//       if (!response.ok) {
+//         throw new Error('Failed to fetch data');
+//       }
+//       const data = await response.json();
+//       return data;
+//     } catch (error) {
+//       console.error(error);
+//     }
+//   };
 
-  const loadData = async () => {
-    const nationalFoods = await loadJSONData('../data/country_food_data.json');
-    const countryFoods = await loadJSONData('../data/foods.js');
+
 
     d3.json('https://cdn.jsdelivr.net/npm/world-atlas@2/countries-110m.json').then(data => {
       const countries = topojson.feature(data, data.objects.countries);
@@ -76,7 +74,7 @@ document.addEventListener("DOMContentLoaded", () => {
         }
       });
     });
-  };
+  
 
   function getCountryNameFromTarget(target) {
     if (!target) {

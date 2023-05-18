@@ -502,5 +502,4 @@ const country_foods = {
     }
 }
 
-
-export default country_foods; 
+export default country_foods;  
