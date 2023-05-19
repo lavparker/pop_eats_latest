@@ -1,3 +1,5 @@
+const country_foods = require('../data/foods.js');
+
 document.addEventListener("DOMContentLoaded", () => {
   const modal = document.querySelectorAll(".modal");
   const overlay = document.querySelector(".overlay");
