@@ -40,24 +40,24 @@ document.addEventListener("DOMContentLoaded", () => {
 
     const tooltip = svg.append('g');
 
-    const loadJSONData = async (url) => {
-        try{
-            const response = await fetch(url); 
-            if(!response.ok){
-                throw new Error("Failed to fetch data")
-            }
-            const data = await response.json();
-            return data;
-        } catch (error){
-            console.error(error); 
-        }
-    }; 
+    // const loadJSONData = async (url) => {
+    //     try{
+    //         const response = await fetch(url); 
+    //         if(!response.ok){
+    //             throw new Error("Failed to fetch data")
+    //         }
+    //         const data = await response.json();
+    //         return data;
+    //     } catch (error){
+    //         console.error(error); 
+    //     }
+    // }; 
 
-    const loadData = async () => {
-        const countryData = await loadJSONData('../data/country_food_data.json');
-        const foodData = await loadJSONData('../data/foods.js');
-        // return {countryData, foodData}; 
-    }
+    // const loadData = async () => {
+    //     const countryData = await loadJSONData('../data/country_food_data.json');
+    //     const foodData = await loadJSONData('../data/foods.js');
+    //     // return {countryData, foodData}; 
+    // }
 
 
     d3.json('https://cdn.jsdelivr.net/npm/world-atlas@2/countries-110m.json').then(data => {
