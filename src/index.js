@@ -7,8 +7,15 @@ document.addEventListener("DOMContentLoaded", () => {
   const closeModalBtn = document.querySelector(".btn-close");
 
   const openModal = function () {
-    modal.classList.remove("hidden");
-    overlay.classList.remove("hidden");
+    if(modal.classList.length > 0){
+      modal.classList.remove("hidden")
+    }
+
+    if(overlay.classList.length > 0){
+      overlay.classList.remove("hidden")
+    }
+    // modal.classList.remove("hidden");
+    // overlay.classList.remove("hidden");
   };
 
   const closeModal = function () {
