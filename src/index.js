@@ -94,7 +94,7 @@ document.addEventListener("DOMContentLoaded", () => {
     return country_name;
   }
 
-  let countryjs = Object.keys(country_Foods);
+  let countryjs = Object.keys(country_foods);
   countryjs.forEach(function (selectedItem) {
     let option = document.createElement('option');
 
