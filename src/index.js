@@ -1,4 +1,3 @@
-
 document.addEventListener("DOMContentLoaded", () => {
   const modal = document.querySelectorAll(".modal");
   const overlay = document.querySelector(".overlay");
@@ -95,7 +94,7 @@ document.addEventListener("DOMContentLoaded", () => {
     return country_name;
   }
 
-  let countryjs = Object.keys(countryFoods);
+  let countryjs = Object.keys(country_Foods);
   countryjs.forEach(function (selectedItem) {
     let option = document.createElement('option');
 
