@@ -1,16 +1,16 @@
 const country_foods = require('../data/foods.js');
 
 document.addEventListener("DOMContentLoaded", () => {
-  const modal = document.querySelectorAll(".modal");
+  const modal = document.querySelector(".modal");
   const overlay = document.querySelector(".overlay");
   const openModalBtn = document.querySelector(".button");
   const closeModalBtn = document.querySelector(".btn-close");
 
   const openModal = function () {
    
-    console.log(typeof classList)
-    // modal.classList.remove("hidden");
-    // overlay.classList.remove("hidden");
+    // console.log(typeof classList)
+    modal.classList.remove("hidden");
+    overlay.classList.remove("hidden");
   };
 
   const closeModal = function () {
