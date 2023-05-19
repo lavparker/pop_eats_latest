@@ -1,6 +1,6 @@
-import national_foods from '../data/country_food_data.json';
+// import national_foods from '../data/country_food_data.json';
 // import country_foods from '../data/foods.js';
-// const national_foods = require('../data/country_food_data.json');
+const national_foods = require('../data/country_food_data.json');
 const country_foods = require('../data/foods.js');
 import { countries } from "country-flags-svg"; 
 
