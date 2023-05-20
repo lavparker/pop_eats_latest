@@ -1,5 +1,6 @@
 const country_foods = require('../data/foods.js');
 
+
 document.addEventListener("DOMContentLoaded", () => {
   const modal = document.querySelector(".modal");
   const overlay = document.querySelector(".overlay");
@@ -73,7 +74,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
     let element = target.querySelector("title");
 
-    // let element = target.$("title")[0];
+
 
     if (!element) {
       return "";
@@ -87,7 +88,7 @@ document.addEventListener("DOMContentLoaded", () => {
   }
 
   let countryjs = Object.keys(country_foods);
-  
+
   countryjs.forEach(function (selectedItem) {
     let option = document.createElement('option');
 
