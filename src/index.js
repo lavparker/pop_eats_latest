@@ -71,9 +71,9 @@ document.addEventListener("DOMContentLoaded", () => {
       return "";
     }
 
-    // let element = target.querySelector("title");
+    let element = target.querySelector("title");
 
-    let element = target.$("title")[0];
+    // let element = target.$("title")[0];
 
     if (!element) {
       return "";
@@ -87,6 +87,7 @@ document.addEventListener("DOMContentLoaded", () => {
   }
 
   let countryjs = Object.keys(country_foods);
+  
   countryjs.forEach(function (selectedItem) {
     let option = document.createElement('option');
 
