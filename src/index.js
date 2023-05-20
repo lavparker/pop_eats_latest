@@ -1,5 +1,5 @@
 const country_foods = require('../data/foods.js');
-
+import nationalFoods from '../data/country_food_data.json';
 
 document.addEventListener("DOMContentLoaded", () => {
   const modal = document.querySelector(".modal");
