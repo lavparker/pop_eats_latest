@@ -34,20 +34,6 @@ document.addEventListener("DOMContentLoaded", () => {
 
   const tooltip = svg.append('g');
 
-//   const loadJSONData = async (url) => {
-//     try {
-//       const response = await fetch(url);
-//       if (!response.ok) {
-//         throw new Error('Failed to fetch data');
-//       }
-//       const data = await response.json();
-//       return data;
-//     } catch (error) {
-//       console.error(error);
-//     }
-//   };
-
-
 
     d3.json('https://cdn.jsdelivr.net/npm/world-atlas@2/countries-110m.json').then(data => {
       const countries = topojson.feature(data, data.objects.countries);
@@ -85,7 +71,9 @@ document.addEventListener("DOMContentLoaded", () => {
       return "";
     }
 
-    let element = target.querySelector("title");
+    // let element = target.querySelector("title");
+
+    let element = target.$("title")[0];
 
     if (!element) {
       return "";
