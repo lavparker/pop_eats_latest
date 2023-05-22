@@ -47,10 +47,9 @@ document.addEventListener("DOMContentLoaded", () => {
         .attr('class', 'country')
         .attr('d', path)
         .attr('data-countryname', (d) => d.properties.name)
-        .append('g')
-        .attr('class', 'tooltip-country')
         .append('title')
-        .text(d => ` ${d.properties.name}`);
+        .text(d => ` ${d.properties.name}`)
+        .attr('class', 'tooltip-country');
 
       svg.on('mouseover', (d) => {
         // console.log('MOUSEOVER EVENT', d.target?.dataset);
