@@ -1,4 +1,5 @@
-const country_foods = require('../data/foods.js');
+// const country_foods = require('../data/foods.js');
+import country_foods from '../data/foods.js';
 import nationalFoods from '../data/country_food_data.json';
 
 document.addEventListener("DOMContentLoaded", () => {
@@ -88,7 +89,8 @@ document.addEventListener("DOMContentLoaded", () => {
   }
 
   let countryjs = Object.keys(country_foods);
-
+  console.log(countryjs); 
+ 
   countryjs.forEach(function (selectedItem) {
     let option = document.createElement('option');
 
