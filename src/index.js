@@ -51,7 +51,7 @@ document.addEventListener("DOMContentLoaded", () => {
         .text(d => ` ${d.properties.name}`);
 
       svg.on('mouseover', (d) => {
-        console.log('MOUSEOVER EVENT', d.target?.dataset);
+        // console.log('MOUSEOVER EVENT', d.target?.dataset);
         let selected_country = getCountryNameFromTarget(d.target?.dataset);
 
         if (nationalFoods[selected_country]) {
@@ -74,7 +74,7 @@ document.addEventListener("DOMContentLoaded", () => {
     }
 
     let element = target.querySelector("title");
-
+    console.log(element)
 
 
     if (!element) {
