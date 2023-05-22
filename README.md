@@ -42,6 +42,13 @@ Build interface/ front end capabilities that engage event listeners, hovering, d
 
 Build out back end and include the country dishes, facts and if there is time flags once hovered over the country.
 
+##Bonus Features
+
+- [ ] Add a flag to each country that can be hovered over to view the national dish of that country
+- [ ] Add a link to the national dish that will take the user to a recipe for that dish
+- [ ] Add a link to the country that will take the user to a Wikipedia page for that country
+
+
 ##Credit
 
 - By Canuckguy et al. - Based on BlankMap-World.svg, Public Domain, https://commons.wikimedia.org/w/index.php?curid=3227969
