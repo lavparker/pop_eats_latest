@@ -1,4 +1,4 @@
-# Pop Eats 
+# :plate_with_cutlery:Pop Eats 
 
 ## Background
 
@@ -52,5 +52,9 @@ My timeline is as follows:
 ## Credit
 
 - By Canuckguy et al. - Based on BlankMap-World.svg, Public Domain, https://commons.wikimedia.org/w/index.php?curid=3227969
+
+- (SVG Map: https://cdn.jsdelivr.net/npm/world-atlas@2/countries-110m.json)
+
+- (National Dish Data: https://raw.githubusercontent.com/samayo/country-json/master/src/country-by-national-dish.json)
 
 - A special thanks to the TA's and coaches at App Academy for their help and guidance throughout this project. 
