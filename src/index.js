@@ -50,8 +50,8 @@ document.addEventListener("DOMContentLoaded", () => {
         .text(d => ` ${d.properties.name}`);
 
       svg.on('mouseover', (d) => {
-        console.log('MOUSEOVER EVENT', d.target);
-        let hovered_country = getCountryNameFromTarget(d.target);
+        console.log('MOUSEOVER EVENT', d.target?.dataset);
+        let hovered_country = getCountryNameFromTarget(d.target?.dataset);
 
         if (nationalFoods[selected_country]) {
           document.getElementsByClassName("country").innerHTML = selected_country;
