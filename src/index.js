@@ -88,16 +88,24 @@ document.addEventListener("DOMContentLoaded", () => {
     return country_name;
   }
 
-  let countryjs = Object.keys(country_foods);
-  console.log(countryjs); 
- 
-  countryjs.forEach(function (selectedItem) {
-    let option = document.createElement('option');
+  // let countryjs = Object.keys(country_foods);
+  // console.log(countryjs); 
 
-    option.value = selectedItem;
-    option.innerHTML = selectedItem;
+  let selector = document.getElementById('selector');
+
+  for (let country in country_foods) {
+    let option = document.createElement('option');
+    option.value = country;
+    option.innerHTML = country;
     selector.appendChild(option);
-  });
+  }
+  // countryjs.forEach(function (selectedItem) {
+  //   let option = document.createElement('option');
+
+  //   option.value = selectedItem;
+  //   option.innerHTML = selectedItem;
+  //   selector.appendChild(option);
+  // });
 
   selector.onchange = function () {
     let selected_country = this.value;
