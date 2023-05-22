@@ -78,7 +78,8 @@ document.addEventListener("DOMContentLoaded", () => {
 
 
     if (!element) {
-      return "";
+      // return "";
+      console.log("no element")
     }
 
     let country_id_and_name = element.innerHTML;
