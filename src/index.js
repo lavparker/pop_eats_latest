@@ -47,6 +47,8 @@ document.addEventListener("DOMContentLoaded", () => {
         .attr('class', 'country')
         .attr('d', path)
         .attr('data-countryname', (d) => d.properties.name)
+        .append('g')
+        .attr('class', 'tooltip')
         .append('title')
         .text(d => ` ${d.properties.name}`);
 
@@ -73,8 +75,8 @@ document.addEventListener("DOMContentLoaded", () => {
       return "";
     }
 
-    let element = target.querySelector("title");
-    console.log(element)
+    let element = target.querySelector('title');
+    // console.log(element)
 
 
     if (!element) {
