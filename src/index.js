@@ -48,7 +48,7 @@ document.addEventListener("DOMContentLoaded", () => {
         .attr('d', path)
         .attr('data-countryname', (d) => d.properties.name)
         .append('g')
-        .attr('class', 'tooltip')
+        .attr('class', 'tooltip-country')
         .append('title')
         .text(d => ` ${d.properties.name}`);
 
