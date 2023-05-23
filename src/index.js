@@ -74,9 +74,10 @@ document.addEventListener("DOMContentLoaded", () => {
       return "";
     }
 
-    console.log("Target", target.countryname); 
-    debugger
-    let element = target.querySelector('title');
+    return target.countryname;
+    // console.log("Target", target.countryname); 
+    // debugger
+    // let element = target.querySelector('title');
     // console.log(element)
 
 
