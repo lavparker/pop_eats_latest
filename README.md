@@ -4,6 +4,7 @@
 
 The world is diverse in many different ways, but one thing that every country has in common is food. Food is a comfort that can bring a community to the table, and with the mix of different spices, textures and flavors, each country has been able to take staples from their respective lands and turn them into a dish that many from that country and even around the world enjoy.  Pop Eats is an interactive visual web application where the user will be able to click on each country and determine what the national dish / most popular dish is.  The goal for this project is to spread the love of food and curiosity of culture and diversity to others. And to maybe even find a fun new dish to try!
 
+[Live Link](https://lavparker.github.io/pop_eats_latest/)
 
 ## Functionality & MVPs
 
