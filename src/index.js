@@ -74,6 +74,8 @@ document.addEventListener("DOMContentLoaded", () => {
       return "";
     }
 
+    console.log("Target", target); 
+    debugger
     let element = target.querySelector('title');
     // console.log(element)
 
