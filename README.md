@@ -14,7 +14,9 @@ In Pop Eats, users will be able to:
 - Use a dropdown to search for a country and view the national dish of that country
 
 ## Wireframes
-(images/wireframe_pop_eats.png)
+
+img(src=images/wireframe_pop_eats.png)
+
 
 ## Technologies, Libraries, APIs
 
