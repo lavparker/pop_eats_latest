@@ -60,4 +60,4 @@ My timeline is as follows:
 
 - (National Dish Data: https://raw.githubusercontent.com/samayo/country-json/master/src/country-by-national-dish.json)
 
-- A special thanks to the TA's and coaches at App Academy for their help and guidance throughout this project. 
+- A special thanks to the TAs and coaches at App Academy for their help and guidance throughout this project. 
