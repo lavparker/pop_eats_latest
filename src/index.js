@@ -54,8 +54,7 @@ document.addEventListener("DOMContentLoaded", () => {
       svg.on('mouseover', (d) => {
         // console.log('MOUSEOVER EVENT', d.target?.dataset);
         let selected_country = getCountryNameFromTarget(d.target?.dataset);
-        console.log(nationalFoods); 
-        console.log(selected_country)
+        
         if (nationalFoods[selected_country]) {
           document.getElementsByClassName("country").innerHTML = selected_country;
         }
@@ -78,13 +77,6 @@ document.addEventListener("DOMContentLoaded", () => {
 
     return target.countryname;
 
-    // console.log("Target", target.countryname); 
-    // debugger
-    // let element = target.querySelector('title');
-    // console.log(element)
-
-    // let element = target.countryname; 
-
 
     if (!element) {
       // return "";
@@ -98,8 +90,7 @@ document.addEventListener("DOMContentLoaded", () => {
     return country_name;
   }
 
-  // let countryjs = Object.keys(country_foods);
-  // console.log(countryjs); 
+
 
   let selector = document.getElementById('selector');
 
