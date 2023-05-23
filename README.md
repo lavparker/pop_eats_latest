@@ -1,4 +1,4 @@
-# :plate_with_cutlery:Pop Eats 
+# :plate_with_cutlery: Pop Eats 
 
 ## Background
 
