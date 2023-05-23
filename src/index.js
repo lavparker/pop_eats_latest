@@ -62,7 +62,8 @@ document.addEventListener("DOMContentLoaded", () => {
       });
 
       svg.on("click", (d) => {
-        let selected_country = getCountryNameFromTarget(d.target);
+        let selected_country = getCountryNameFromTarget(d.target?.dataset);
+
         if (nationalFoods[selected_country]) {
           document.getElementById("food_displayer").innerHTML = selected_country + ": " + nationalFoods[selected_country].dish;
         }
