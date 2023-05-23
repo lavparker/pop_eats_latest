@@ -15,7 +15,8 @@ In Pop Eats, users will be able to:
 
 ## Wireframes
 
-img(src=images/wireframe_pop_eats.png)
+<img src="images/wireframe_pop_eats.png/images/wireframes_pop_eats.png" alt="">
+
 
 
 ## Technologies, Libraries, APIs
