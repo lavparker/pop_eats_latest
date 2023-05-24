@@ -140,7 +140,7 @@ const country_foods = {
     "Dominica": {
         "dish": "Mountain chicken, Fish broth"
     },
-    "Dominican Republic": {
+    "Dominican Rep.": {
         "dish": "rice, red beans, and meat"
     },
     "Ecuador": {
@@ -157,6 +157,9 @@ const country_foods = {
     },
     "Estonia": {
         "dish": "sauerkraut stew"
+    },
+    "eSwatini": {
+        "dish": "Karoo roast ostrich steak"
     },
     "Ethiopia": {
         "dish": "Wat with injera, Fit-fit"
@@ -254,6 +257,9 @@ const country_foods = {
     "Lebanon": {
         "dish": "Kibbeh"
     },
+    "Lesotho": {
+        "dish": "Papa"
+    },
     "Libya": {
         "dish": "Bazeen, Usban"
     },
@@ -268,6 +274,9 @@ const country_foods = {
     },
     "Madagascar": {
         "dish": "Romazava "
+    },
+    "Malawi": {
+        "dish": "Nsima"
     },
     "Malaysia": {
         "dish": "Nasi lemak,Satay, Laksa, Roti canai"
