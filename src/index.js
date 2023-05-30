@@ -24,33 +24,33 @@ document.addEventListener("DOMContentLoaded", () => {
   closeModalBtn.addEventListener("click", closeModal);
   overlay.addEventListener("click", closeModal);
 
-const screenWidth = 13; // inches
-const diagonalRatio = Math.sqrt(16 ** 2 + 9 ** 2);
+// const screenWidth = 13; // inches
+// const diagonalRatio = Math.sqrt(16 ** 2 + 9 ** 2);
 
-const width = (screenWidth / diagonalRatio) * Math.sqrt(16 ** 2 / (16 ** 2 + 9 ** 2));
-const height = (width * 9) / 16;
+// const width = (screenWidth / diagonalRatio) * Math.sqrt(16 ** 2 / (16 ** 2 + 9 ** 2));
+// const height = (width * 9) / 16;
 
-const svg = d3.select('body')
-  .append('svg')
-  .attr('width', width)
-  .attr('height', height);
+// const svg = d3.select('body')
+//   .append('svg')
+//   .attr('width', width)
+//   .attr('height', height);
 
-const projection = d3.geoMercator().scale(140).translate([width / 2, height / 1.4]);
-const path = d3.geoPath().projection(projection);
+// const projection = d3.geoMercator().scale(140).translate([width / 2, height / 1.4]);
+// const path = d3.geoPath().projection(projection);
 
-const tooltip = svg.append('g');
-  // const width = 900;
-  // const height = 900;
+// const tooltip = svg.append('g');
+  const width = 900;
+  const height = 900;
 
-  // const svg = d3.select('body')
-  //   .append('svg')
-  //   .attr('width', width)
-  //   .attr('height', height);
+  const svg = d3.select('body')
+    .append('svg')
+    .attr('width', width)
+    .attr('height', height);
 
-  // const projection = d3.geoMercator().scale(140).translate([width / 2, height / 1.4]);
-  // const path = d3.geoPath().projection(projection);
+  const projection = d3.geoMercator().scale(140).translate([width / 2, height / 1.4]);
+  const path = d3.geoPath().projection(projection);
 
-  // const tooltip = svg.append('g');
+  const tooltip = svg.append('g');
 
 
     d3.json('https://cdn.jsdelivr.net/npm/world-atlas@2/countries-110m.json').then(data => {
