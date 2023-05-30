@@ -39,8 +39,8 @@ document.addEventListener("DOMContentLoaded", () => {
 // const path = d3.geoPath().projection(projection);
 
 // const tooltip = svg.append('g');
-  const width = 800;
-  const height = 800;
+  const width = 600;
+  const height = 600;
 
   const svg = d3.select('body')
     .append('svg')
