@@ -25,7 +25,7 @@ document.addEventListener("DOMContentLoaded", () => {
   overlay.addEventListener("click", closeModal);
 
   const width = 900;
-  const height = 900;
+  const height = 500;
 
   const svg = d3.select('body')
     .append('svg')
