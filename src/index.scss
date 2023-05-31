@@ -3,9 +3,24 @@
 .tooltip-country {
     background-color: wheat;
     color: coral;
+    overflow: wrap;
     font-size: 24px;
     border-radius: 4px;
 }
+
+#food_display {
+    background-color: wheat;
+    color: coral;
+    overflow: wrap;
+    font-size: 24px;
+    border-radius: 4px;
+    margin-left: 70%;
+    margin-top: -10%;
+    max-width: 20%;
+    flex-wrap: wrap;
+}
+
+
 .tooltip-country:hover {
     background-color: wheat;
     color: coral;
@@ -21,16 +36,15 @@
     font-weight: bold;
     padding: 10px;
     background-color: aqua;
-    background-size: 3rem;
+    background-size: 2.5rem;
     border-radius: 7px;
-    font-size: 36px;
-    max-width: 30%;
+    font-size: 20px;
+    max-width: 20%;
 }
 
 .social_media_links:hover{
     background-color: coral;
     font-style: italic;
-    font-size:42px;
 
 }
 
@@ -170,10 +184,10 @@ body {
 #selector {
     background-color: rgb(80, 184, 177);
     color: whitesmoke;
-    font-size: 18px;
+    font-size: 14px;
     text-align: center;
     margin-top: -18%;
-    margin-left: -8%;
+    margin-left: -80%;
     margin-bottom: 2rem;
     border-radius: 7px;
     outline-style: double;
